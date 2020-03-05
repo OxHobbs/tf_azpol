@@ -1,0 +1,3 @@
+private_vars.tfvars
+fedramp_high.tf
+**/.terraform
