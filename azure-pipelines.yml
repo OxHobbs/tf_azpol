@@ -37,3 +37,11 @@ steps:
     workingDirectory: '$(System.DefaultWorkingDirectory)/devtest/governance/naas_governance'
     environmentServiceName: 'azuregov2'
 
+- task: TerraformCLI@0
+  displayName: Terraform Apply
+  inputs:
+    command: 'apply'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/devtest/governance/naas_governance'
+    environmentServiceName: 'azuregov2'
+
+
