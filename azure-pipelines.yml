@@ -30,3 +30,5 @@ steps:
   inputs:
     command: 'plan'
     workingDirectory: '$(System.DefaultWorkingDirectory)/devtest/governance/naas_governance'
+    environmentServiceName: 'austin-pipeline-spn'
+
