@@ -27,21 +27,23 @@ steps:
   displayName: 'Run a multi-line script'
 
 - task: TerraformCLI@0
+  displayName: Terraform init
   inputs:
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/devtest/governance/naas_governance'
 
 - task: TerraformCLI@0
+  displayName: Terraform Plan
   inputs:
     command: 'plan'
     workingDirectory: '$(System.DefaultWorkingDirectory)/devtest/governance/naas_governance'
     environmentServiceName: 'azuregov2'
 
-- task: TerraformCLI@0
-  displayName: Terraform Apply
-  inputs:
-    command: 'apply'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/devtest/governance/naas_governance'
-    environmentServiceName: 'azuregov2'
+# - task: TerraformCLI@0
+#   displayName: Terraform Apply
+#   inputs:
+#     command: 'apply'
+#     workingDirectory: '$(System.DefaultWorkingDirectory)/devtest/governance/naas_governance'
+#     environmentServiceName: 'azuregov2'
 
 
