@@ -30,10 +30,10 @@ steps:
   inputs:
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/devtest/governance/naas_governance'
-    
+
 - task: TerraformCLI@0
   inputs:
     command: 'plan'
     workingDirectory: '$(System.DefaultWorkingDirectory)/devtest/governance/naas_governance'
-    environmentServiceName: 'azuregov'
+    environmentServiceName: 'azuregov2'
 
