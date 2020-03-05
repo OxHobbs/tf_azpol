@@ -22,9 +22,6 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    echo Here is my Client ID:
     echo $ARM_CLIENT_ID
-  env:
-    ARM_CLIENT_ID: $(ARM_CLIENT_ID)
   displayName: 'Run a multi-line script'
