@@ -8,11 +8,6 @@ trigger:
 
 variables:
 - group: tf_az_provider
-# $env:ARM_CLIENT_ID= "1478bff9-0cca-4e78-bf0e-92cf47abfa22"
-# $env:ARM_CLIENT_SECRET="?/kAE9S?BqgO2F/dWQ0supZw235wkA:4"
-# $env:ARM_SUBSCRIPTION_ID="fcbf1a19-f965-41c6-94a7-5e415c4d06a8"
-# $env:ARM_TENANT_ID="8a09f2d7-8415-4296-92b2-80bb4666c5fc"
-
 
 pool:
   vmImage: 'ubuntu-latest'
