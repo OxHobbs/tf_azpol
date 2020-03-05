@@ -25,3 +25,8 @@ steps:
     echo Here is my Client ID:
     echo $ARM_CLIENT_ID
   displayName: 'Run a multi-line script'
+
+- task: TerraformCLI@0
+  inputs:
+    command: 'validate'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/devtest/governance/naas_governance'
